@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/fragment1"
+tools:context=".HomeFragment"
+android:padding="30dp">
+
+<!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo10"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculatrice Rapide"
+        android:layout_marginBottom="50dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:background="@color/orange"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:hint="Entrez le premier nombre" />
+
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:hint="Entrez le deuxieme nombre" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/blue"
+        android:onClick="Add"
+        android:text="Addition"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/red"
+        android:onClick="Sub"
+        android:text="Soustraction"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/green"
+        android:onClick="Multi"
+        android:text="Multiplication"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/color1"
+        android:onClick="divide"
+        android:text="Division"
+        android:textColor="@color/white" />
+
+    <!--
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Allez vers About" />
+
+        -->
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:text="resultat:"
+        android:inputType="number" />
+
+</LinearLayout>
+
+</FrameLayout>
